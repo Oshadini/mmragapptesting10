@@ -305,7 +305,7 @@ if uploaded_file is not None:
     
       # Create the multi-vector retriever
       retriever = MultiVectorRetriever(
-          vectorstore=vectorstore,
+          vectorstore=_vectorstore,
           docstore=store,
           id_key=id_key,
       )
